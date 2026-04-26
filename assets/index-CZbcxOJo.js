@@ -168,7 +168,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
   width: 28px;
   height: 28px;
   border-radius: 50%;
-  background: ${e=>e.$variant===`increment`?`linear-gradient(135deg, #7c3aed 0%, #6d28d9 100%)`:`linear-gradient(135deg, #E53E3E 0%, #C53030 100%)`};
+  background: ${e=>e.$variant===`increment`?`linear-gradient(135deg, #1f721d 0%, #1c7519 100%)`:`linear-gradient(135deg, #E53E3E 0%, #C53030 100%)`};
   color: white;
   font-size: 1rem;
   font-weight: bold;
@@ -201,7 +201,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
 `,co=L.span`
   font-size: 1.1rem;
   font-weight: 700;
-  color: #a78bfa;
+  color: #f5f5f5;
   min-width: 20px;
   text-align: center;
 `,lo=L.span`
@@ -213,6 +213,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
   border-radius: 12px;
   padding: 16px;
   margin-top: 16px;
+  margin-bottom: 16px;
   box-shadow:
     0 8px 24px rgba(167, 139, 250, 0.3),
     inset 0 2px 8px rgba(255, 255, 255, 0.3);
