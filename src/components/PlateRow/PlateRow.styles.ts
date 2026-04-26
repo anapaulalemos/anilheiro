@@ -52,7 +52,7 @@ export const Button = styled.button<{ $variant: 'increment' | 'decrement' }>`
   border-radius: 50%;
   background: ${props =>
     props.$variant === 'increment'
-      ? 'linear-gradient(135deg, #7c3aed 0%, #6d28d9 100%)'
+      ? 'linear-gradient(135deg, #1f721d 0%, #1c7519 100%)'
       : 'linear-gradient(135deg, #E53E3E 0%, #C53030 100%)'
   };
   color: white;
@@ -91,7 +91,7 @@ export const CountDisplay = styled.div`
 export const CountValue = styled.span`
   font-size: 1.1rem;
   font-weight: 700;
-  color: #a78bfa;
+  color: #f5f5f5;
   min-width: 20px;
   text-align: center;
 `;
