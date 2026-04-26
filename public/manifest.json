@@ -8,7 +8,7 @@
   "theme_color": "#a78bfa",
   "icons": [
     {
-      "src": "/favicon.svg",
+      "src": "/anilheiro/favicon.svg",
       "sizes": "any",
       "type": "image/svg+xml",
       "purpose": "any maskable"
