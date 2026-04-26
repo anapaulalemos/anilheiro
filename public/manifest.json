@@ -1,0 +1,19 @@
+{
+  "name": "Anilheiro - Calculadora LPO",
+  "short_name": "Anilheiro",
+  "description": "Calculadora de peso para levantamento de peso olímpico",
+  "start_url": "/anilheiro/",
+  "display": "standalone",
+  "background_color": "#1a1a1a",
+  "theme_color": "#a78bfa",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["fitness", "sports", "utilities"],
+  "orientation": "portrait"
+}
