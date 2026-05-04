@@ -34,7 +34,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
   }
 
   h1, h2, h3, h4, h5, h6 {
-    color: #a78bfa;
+    color: #f5f5f5;
     font-weight: 700;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
   }
@@ -79,15 +79,15 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
       font-size: 11px;
     }
   }
-`,Ua=2.20462,Wa={FEMININA:15,MASCULINA:20},Ga=[1,2.2,4.5,5,10,11.3,15,20,25],Ka={25:`#E53E3E`,20:`#3182CE`,15:`#D69E2E`,11.3:`#38A169`,10:`#38A169`,5:`#A0AEC0`,4.5:`#2D3748`,2.2:`#63B3ED`,1:`#2D3748`},qa=L.div`
+`,Ua=2.20462,Wa={FEMININA:15,MASCULINA:20},Ga=[1,2.2,4.5,5,10,11.3,15,20,25],Ka={25:`#E53E3E`,20:`#3182CE`,15:`#D69E2E`,11.3:`#38A169`,10:`#38A169`,5:`#A0AEC0`,4.5:`#2D3748`,2.2:`#63B3ED`,2:`#2D3748`,1:`#2D3748`},qa=L.div`
   background: linear-gradient(135deg, #2d2d30 0%, #3a3a3f 100%);
-  border: 2px solid #a78bfa;
+  border: 2px solid #a0a0a0;
   border-radius: 8px;
   padding: 12px;
   margin-bottom: 16px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
 `,Ja=L.h2`
-  color: #a78bfa;
+  color: #f5f5f5;
   font-size: 1rem;
   margin-bottom: 10px;
   text-align: center;
@@ -106,23 +106,23 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
   align-items: center;
   font-size: 0.9rem;
   font-weight: 600;
-  color: ${e=>e.$isSelected?`#a78bfa`:`#f5f5f5`};
+  color: ${e=>e.$isSelected?`#f5f5f5`:`#a0a0a0`};
   cursor: pointer;
   padding: 8px 12px;
   border-radius: 6px;
-  border: 2px solid ${e=>e.$isSelected?`#a78bfa`:`transparent`};
-  background: ${e=>e.$isSelected?`rgba(167, 139, 250, 0.1)`:`transparent`};
+  border: 2px solid ${e=>e.$isSelected?`#f5f5f5`:`transparent`};
+  background: ${e=>e.$isSelected?`rgba(245, 245, 245, 0.1)`:`transparent`};
   transition: all 0.3s ease;
 
   &:hover {
-    color: #a78bfa;
-    border-color: #a78bfa;
-    background: rgba(167, 139, 250, 0.1);
+    color: #f5f5f5;
+    border-color: #f5f5f5;
+    background: rgba(245, 245, 245, 0.1);
   }
 `,Za=L.input`
   margin-right: 6px;
   transform: scale(1.1);
-  accent-color: #a78bfa;
+  accent-color: #f5f5f5;
 `,Qa=L.span`
   margin-left: 4px;
   color: #a0a0a0;
@@ -209,37 +209,17 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
   color: #a0a0a0;
   font-weight: 500;
 `,uo=({weight:e,count:t,onIncrement:n,onDecrement:r})=>{let i=(e*Ua).toFixed(1);return(0,R.jsxs)(to,{$plateColor:Ka[e]||`#6B7280`,children:[(0,R.jsxs)(no,{children:[(0,R.jsxs)(ro,{children:[e,`kg`]}),(0,R.jsxs)(io,{children:[`(`,i,`lb)`]})]}),(0,R.jsxs)(ao,{children:[(0,R.jsx)(oo,{$variant:`decrement`,onClick:r,disabled:t===0,"aria-label":`Remover anilha de ${e}kg`,children:`−`}),(0,R.jsxs)(so,{children:[(0,R.jsx)(co,{children:t}),(0,R.jsx)(lo,{children:`un`})]}),(0,R.jsx)(oo,{$variant:`increment`,onClick:n,"aria-label":`Adicionar anilha de ${e}kg`,children:`+`})]})]})},z=L.div`
-  background: linear-gradient(135deg, #a78bfa 0%, #8b5cf6 100%);
+  background: linear-gradient(135deg, #f5f5f5 0%, #a0a0a0 100%);
   border-radius: 12px;
   padding: 16px;
   margin-top: 16px;
   margin-bottom: 16px;
   box-shadow:
-    0 8px 24px rgba(167, 139, 250, 0.3),
+    0 8px 24px rgba(160, 160, 160, 0.3),
     inset 0 2px 8px rgba(255, 255, 255, 0.3);
   text-align: center;
   position: relative;
   overflow: hidden;
-
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(
-      90deg,
-      transparent,
-      rgba(255, 255, 255, 0.2),
-      transparent
-    );
-    transition: left 0.5s ease;
-  }
-
-  &:hover::before {
-    left: 100%;
-  }
 `,fo=L.h2`
   color: #1a1a1a;
   font-size: 1rem;
@@ -305,7 +285,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
   margin: 0 auto 8px;
   border-radius: 2px;
   opacity: 0.6;
-`,go=({totalWeight:e,onClear:t})=>{let n=(e*Ua).toFixed(1);return(0,R.jsxs)(z,{children:[(0,R.jsx)(fo,{children:`Peso Total`}),(0,R.jsx)(ho,{}),(0,R.jsxs)(po,{children:[(0,R.jsxs)(B,{children:[e,`kg`]}),(0,R.jsxs)(V,{children:[`(`,n,` lb)`]})]}),(0,R.jsx)(mo,{onClick:t,"aria-label":`Limpar todas as anilhas`,children:`Limpar`})]})},_o=L.div`
+`,go=({totalWeight:e,onClear:t})=>{let n=(e*Ua).toFixed(1),r=e.toFixed(1);return(0,R.jsxs)(z,{children:[(0,R.jsx)(fo,{children:`Peso Total`}),(0,R.jsx)(ho,{}),(0,R.jsxs)(po,{children:[(0,R.jsxs)(B,{children:[r,`kg`]}),(0,R.jsxs)(V,{children:[`(`,n,` lb)`]})]}),(0,R.jsx)(mo,{onClick:t,"aria-label":`Limpar todas as anilhas`,children:`Limpar`})]})},_o=L.div`
   min-height: 100vh;
   padding: 12px;
   max-width: 480px;
@@ -323,11 +303,9 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
   margin-bottom: 16px;
 `,yo=L.h1`
   font-size: 1.8rem;
-  color: #a78bfa;
+  color: #f5f5f5;
   margin-bottom: 4px;
-  text-shadow:
-    0 0 10px rgba(167, 139, 250, 0.3),
-    0 4px 8px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   letter-spacing: 1px;
 
   @media (max-width: 768px) {
@@ -350,7 +328,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
   margin-bottom: 16px;
 `,H=L.h3`
   font-size: 1rem;
-  color: #a78bfa;
+  color: #a0a0a0;
   margin-bottom: 12px;
   text-align: center;
   text-transform: uppercase;
