@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   background: linear-gradient(135deg, #2d2d30 0%, #3a3a3f 100%);
-  border: 2px solid #a78bfa;
+  border: 2px solid #a0a0a0;
   border-radius: 8px;
   padding: 12px;
   margin-bottom: 16px;
@@ -10,7 +10,7 @@ export const Container = styled.div`
 `;
 
 export const Title = styled.h2`
-  color: #a78bfa;
+  color: #f5f5f5;
   font-size: 1rem;
   margin-bottom: 10px;
   text-align: center;
@@ -33,25 +33,25 @@ export const Option = styled.label<{ $isSelected: boolean }>`
   align-items: center;
   font-size: 0.9rem;
   font-weight: 600;
-  color: ${props => props.$isSelected ? '#a78bfa' : '#f5f5f5'};
+  color: ${props => props.$isSelected ? '#f5f5f5' : '#a0a0a0'};
   cursor: pointer;
   padding: 8px 12px;
   border-radius: 6px;
-  border: 2px solid ${props => props.$isSelected ? '#a78bfa' : 'transparent'};
-  background: ${props => props.$isSelected ? 'rgba(167, 139, 250, 0.1)' : 'transparent'};
+  border: 2px solid ${props => props.$isSelected ? '#f5f5f5' : 'transparent'};
+  background: ${props => props.$isSelected ? 'rgba(245, 245, 245, 0.1)' : 'transparent'};
   transition: all 0.3s ease;
 
   &:hover {
-    color: #a78bfa;
-    border-color: #a78bfa;
-    background: rgba(167, 139, 250, 0.1);
+    color: #f5f5f5;
+    border-color: #f5f5f5;
+    background: rgba(245, 245, 245, 0.1);
   }
 `;
 
 export const RadioInput = styled.input`
   margin-right: 6px;
   transform: scale(1.1);
-  accent-color: #a78bfa;
+  accent-color: #f5f5f5;
 `;
 
 export const WeightInfo = styled.span`

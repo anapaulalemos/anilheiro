@@ -13,13 +13,14 @@ import {
 
 const TotalDisplay: React.FC<TotalDisplayProps> = ({ totalWeight, onClear }) => {
   const totalInLbs = (totalWeight * KG_TO_LB_FACTOR).toFixed(1);
+  const roundedTotalWeight = totalWeight.toFixed(1);
 
   return (
     <Container>
       <Title>Peso Total</Title>
       <Divider />
       <WeightContainer>
-        <TotalWeight>{totalWeight}kg</TotalWeight>
+        <TotalWeight>{roundedTotalWeight}kg</TotalWeight>
         <WeightInLbs>({totalInLbs} lb)</WeightInLbs>
       </WeightContainer>
       <ClearButton onClick={onClear} aria-label="Limpar todas as anilhas">

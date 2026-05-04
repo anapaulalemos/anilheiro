@@ -1,37 +1,17 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  background: linear-gradient(135deg, #a78bfa 0%, #8b5cf6 100%);
+  background: linear-gradient(135deg, #f5f5f5 0%, #a0a0a0 100%);
   border-radius: 12px;
   padding: 16px;
   margin-top: 16px;
   margin-bottom: 16px;
   box-shadow:
-    0 8px 24px rgba(167, 139, 250, 0.3),
+    0 8px 24px rgba(160, 160, 160, 0.3),
     inset 0 2px 8px rgba(255, 255, 255, 0.3);
   text-align: center;
   position: relative;
   overflow: hidden;
-
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(
-      90deg,
-      transparent,
-      rgba(255, 255, 255, 0.2),
-      transparent
-    );
-    transition: left 0.5s ease;
-  }
-
-  &:hover::before {
-    left: 100%;
-  }
 `;
 
 export const Title = styled.h2`

@@ -2,7 +2,7 @@
 
 **Calculadora de Peso para Levantamento de Peso Olímpico (LPO)**
 
-Um aplicativo React moderno para calcular o peso total de uma barra de LPO de acordo com as anilhas selecionadas. Desenvolvido especificamente para o contexto de CrossFit e levantamento de peso olímpico.
+Um aplicativo para calcular o peso total de uma barra de LPO de acordo com as anilhas selecionadas. Desenvolvido especificamente para o contexto de CrossFit e levantamento de peso olímpico.
 
 ## ✨ Funcionalidades
 
@@ -15,29 +15,12 @@ Um aplicativo React moderno para calcular o peso total de uma barra de LPO de ac
 - **Botão Limpar**: Reset rápido mantendo apenas o peso da barra
 - **Design Responsivo**: Otimizado para desktop e mobile
 
-## 🎨 Design
-
-- Tema escuro inspirado no ambiente de levantamento de peso
-- Cores douradas e vermelhas para destaques
-- Tipografia forte e moderna
-- Cores das anilhas baseadas nos padrões olímpicos reais:
-  - 25kg → Vermelho
-  - 20kg → Azul
-  - 15kg → Amarelo
-  - 11.3kg → Verde
-  - 10kg → Verde
-  - 5kg → Branco/Cinza
-  - 4.5kg → Preto
-  - 2.2kg → Azul claro
-  - 1kg → Preto
-
 ## 🚀 Tecnologias Utilizadas
 
-- **React 19** - Framework principal
-- **TypeScript** - Tipagem estática
-- **Vite** - Build tool e dev server
-- **Styled Components** - Estilização
-- **React Router Dom** - Roteamento (HashRouter para GitHub Pages)
+- **React 19**
+- **TypeScript**
+- **Vite**
+- **Styled Components**
 
 ## 🛠️ Como Rodar Localmente
 
@@ -101,50 +84,15 @@ O projeto já está configurado para GitHub Pages:
 - Script `predeploy` e `deploy` no `package.json`
 - Dependência `gh-pages` para deployment automatizado
 
-## 📁 Estrutura do Projeto
-
-```
-src/
-├── components/
-│   ├── BarSelector/          # Seletor de tipo de barra
-│   │   ├── BarSelector.tsx
-│   │   └── BarSelector.styles.ts
-│   ├── PlateRow/            # Linha individual de anilha
-│   │   ├── PlateRow.tsx
-│   │   └── PlateRow.styles.ts
-│   └── TotalDisplay/        # Exibição do peso total
-│       ├── TotalDisplay.tsx
-│       └── TotalDisplay.styles.ts
-├── constants/               # Constantes da aplicação
-│   └── index.ts
-├── types/                   # Definições TypeScript
-│   └── index.ts
-├── styles/                  # Estilos globais
-│   └── GlobalStyles.ts
-├── App.tsx                  # Componente principal
-├── App.styles.ts            # Estilos do App
-└── main.tsx                 # Ponto de entrada
-```
-
 ## 🔧 Personalização
 
 Para adicionar ou remover anilhas, edite o array `PLATE_WEIGHTS` em `src/constants/index.ts`:
 
 ```typescript
-export const PLATE_WEIGHTS = [1, 2.2, 4.5, 5, 10, 11.3, 15, 20, 25] as const;
+export const PLATE_WEIGHTS = [1, 2, 2.2, 4.5, 5, 10, 11.3, 15, 20, 25] as const;
 ```
 
 As cores das anilhas podem ser ajustadas em `PLATE_COLORS` no mesmo arquivo.
-
-## 🤝 Contribuição
-
-Contribuições são bem-vindas! Sinta-se à vontade para:
-
-1. Fazer fork do projeto
-2. Criar uma branch para sua feature
-3. Fazer commit das mudanças
-4. Fazer push para a branch
-5. Abrir um Pull Request
 
 ## 📄 Licença
 

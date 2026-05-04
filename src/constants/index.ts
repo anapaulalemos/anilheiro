@@ -20,6 +20,7 @@ export const PLATE_COLORS = {
   5: '#A0AEC0', // Light gray/white
   4.5: '#2D3748', // Black
   2.2: '#63B3ED', // Light blue
+  2: '#2D3748', // Black
   1: '#2D3748', // Black
 } as const;
 

@@ -22,11 +22,9 @@ export const Header = styled.header`
 
 export const Title = styled.h1`
   font-size: 1.8rem;
-  color: #a78bfa;
+  color: #f5f5f5;
   margin-bottom: 4px;
-  text-shadow:
-    0 0 10px rgba(167, 139, 250, 0.3),
-    0 4px 8px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   letter-spacing: 1px;
 
   @media (max-width: 768px) {
@@ -55,7 +53,7 @@ export const PlatesSection = styled.section`
 
 export const SectionTitle = styled.h3`
   font-size: 1rem;
-  color: #a78bfa;
+  color: #a0a0a0;
   margin-bottom: 12px;
   text-align: center;
   text-transform: uppercase;
